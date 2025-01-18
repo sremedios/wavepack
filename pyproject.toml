@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wavepack"
+version = "0.1.1"
+description = "Simple differentiable ND wavelet packet decomposition in PyTorch"
+authors = [
+  { name="Samuel W. Remedios", email="sam.remedios@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+]
+keywords = ["wavelet packet", "wavelet tree"]
+requires-python = ">= 3.10"
+dependencies = [
+  "PyWavelets",
+  "torch",
+  "numpy",
+]
+
+[project.urls]
+"Source" = "https://github.com/sremedios/wavepack"
